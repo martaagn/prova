@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     /* outline: 1px solid red !important; */
     box-sizing: border-box;
@@ -50,16 +54,16 @@ nav{
 
 .pagine{
     display: flex;
-    gap: 2rem;
     width: auto;
 }
 
 nav li{
     list-style: none;
+    margin: 0.5rem;
 }
 
 nav a{
-    font-size: clamp(1.1rem, 1.7dvw, 2rem);
+    font-size: clamp(1rem, 0.8rem + 1vw, 2.2rem);
     color: inherit;
     text-decoration: none;
 }
@@ -160,6 +164,7 @@ body.dark-mode img {
     transition: filter 0.2s ease;
 }
 
+/* torna su btn */
 .circle{
     position: fixed;
     bottom: 10px;
@@ -187,14 +192,16 @@ footer{
     align-items: center;
     flex-direction: column;
 
-    border-top: dashed 0.2dvh var(--brdr);
-    height: 6dvh;
+    border-top: dashed 1.6px var(--brdr);
+    min-height: calc(6dvh+1rem);
 
+    padding: 0.5rem;
     margin-top: auto;
 }
 
 footer h6{
     text-align: center;
+    font-size: clamp(1.0625rem, 0.9858rem + 0.6vw, 1.8rem)
 }
 
 /* dark mode */
@@ -219,7 +226,7 @@ footer h6{
     box-shadow: var(--brdr) 0 0.2dvh 0 0;
 }
 
-/* AVVISTAMENTI */
+/* OSSERVAZIONI */
 main{
     display: flex;
     flex-direction: column;
@@ -229,6 +236,7 @@ main{
 main .titolo{
     margin: 1rem 0 0 0;
     text-align: center;
+    font-size: clamp(1rem, calc(1rem + 1dvw), 1.5rem);
 }
 
 main p{
@@ -339,6 +347,7 @@ main a{
 
 .sezioni div p{
     text-align: center;
+    font-family: sans-serif;
 }
 
 .sezioni h3{
@@ -353,4 +362,7 @@ main a{
     list-style: circle;
     list-style-position: inside;
     margin: 1rem;
+
+    font-size: clamp(1rem, 1rem + 1.7dvw, 1.6rem);
+
 }
