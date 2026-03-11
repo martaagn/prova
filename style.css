@@ -13,6 +13,7 @@ html{
     --bg: rgb(249, 243, 228);
     --bg-theme-btn: rgb(205, 187, 151);
     --bg-theme-btn-hover: rgb(164, 150, 122);
+    --bg-top-btn: rgba(164, 150, 122, 45%);
 
     --bg-sez: antiquewhite;
 
@@ -161,7 +162,7 @@ header .titolo-h{
 
 body.dark-mode img {
     filter: brightness(0.7) contrast(1.1);
-    transition: filter 0.2s ease;
+    transition: filter 0.2s ease-in-out;
 }
 
 /* torna su btn */
@@ -173,7 +174,7 @@ body.dark-mode img {
     width: 80px;
     height: 80px;
 
-    background-color: var(--bg-theme-btn);
+    background-color: var(--bg-top-btn);
     border-radius: 100%;
 
     display: flex;
@@ -330,19 +331,23 @@ main a{
 
 }
 
-.sezioni div{
+.sezioni > div{
     scroll-margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    width: fit-content;
     margin: 1rem;
     padding: 2rem;
 
     background-color: var(--bg-sez);
     border-radius: 3rem;
+}
+
+#binario{
+    display: flex;
+    flex-direction: row;
 }
 
 .sezioni div p{

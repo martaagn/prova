@@ -1,3 +1,18 @@
+:root{
+
+    --bg-tag: rgb(228, 219, 202);
+
+    --brdr: rgb(232, 0, 0);
+}
+
+.dark-mode{
+
+    --bg-tag: rgb(74, 69, 59);
+
+    --brdr: rgb(190, 102, 102);
+
+}
+
 .contenitore-slider{
     display: flex;
     align-items: center;
@@ -7,40 +22,44 @@
 }
 
 .finestra-slider{
-    width: 800px;
+    width: 50vw;
     overflow: hidden;
     border-radius: 40px;
 }
 
 .card-wrapper{
-    width: 100%;
+    width: 50vw;
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     gap: 10px;
 }
 
 .card{
-    min-width: 100%;
-    padding: 40px;
+    width: 50vw;
+    padding: 20px;
     box-sizing: border-box;
     border-radius: 40px;
     
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     
     gap: 20px;
     
-    background-color:  rgba(243, 233, 219, 0.699);
+    background-color:  var(--bg);
     font-family: sans-serif;
 
 }
 
 .card img{
-    border: rgb(165, 7, 7) dashed 5px;
+    border: var(--brdr) dashed 5px;
     border-radius: 15px;
+
+    max-width: min(20vw, 350px);
+    height: auto;
 }
 
 .container-dati{
@@ -53,13 +72,13 @@
     content: "";
 
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: clamp(0.85rem, 0.8rem + 1vw, 2rem);
+    height: clamp(0.85rem, 0.8rem + 1vw, 2rem);
 
     padding-right: 0.25rem;
     mask-repeat: no-repeat;
 
-    mask-image: url('../immagini/calendario.svg');
+    mask-image: url('/immagini/calendario.svg');
     background-color: currentColor;
     mask-size: contain;
     vertical-align: middle;
@@ -69,13 +88,13 @@
     content: "";
 
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: clamp(0.85rem, 0.8rem + 1vw, 2rem);
+    height: clamp(0.85rem, 0.8rem + 1vw, 2rem);
 
     padding-right: 0.25rem;
     mask-repeat: no-repeat;
 
-    mask-image: url('../immagini/pin.svg');
+    mask-image: url('/immagini/pin.svg');
     background-color: currentColor;
     mask-size: contain;
     vertical-align: middle;
@@ -87,44 +106,48 @@
 }
 
 .container-data-luogo p{
-    font-size: 0.85rem;
+    font-size: clamp(0.85rem, 0.8rem + 1vw, 2rem);
 
     width: fit-content;
     padding: 5px 15px;
-    border-radius: 40px;
+    border-radius: 400px;
 
-    background-color: rgb(226, 220, 212);
+    background-color: var(--bg-tag);
 }
 
 .container-nomi h3{
     font-weight: 600;
     margin: 5px 5px 0 5px;
-    font-size: 1.6rem;
+    font-size: clamp(1.1rem, 1.1rem + 1.6vw, 3.3rem);
 }
 .container-nomi h5{
     margin: 0 5px 5px 5px;
     font-weight: 400;
-    font-size: 1.2rem;
-    color: rgb(146, 27, 27);
+    font-size: clamp(1rem, 1rem + 1.1vw, 3rem);
+    color: var(--brdr);
 }
 
-.card p{
+.card .container-dati p{
+    text-align: left;
     margin: 0.125rem;
-    color: rgb(79, 55, 55);
+    color: var(--txt);
+    font-size: clamp(0.85rem, 0.8rem + 1vw, 2rem);
+
 }
 
 .freccia{
-    background-color: rgba(185, 57, 57,20%);
+    color: var(--txt);
+    background-color: var(--bg-theme-btn);
     border: none;
-    border-radius: 15px;
+    border-radius: 35px;
 
-    font-size: 1rem;
-    width: 60px;
-    height: 40px;
+    width: 4vw;
+    height: 3vw;
+    font-size: calc(0.5rem + 1.5vw);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .freccia:hover{
-    background-color: rgba(86, 27, 27, 0.2);
+    background-color: var(--bg-theme-btn-hover);
 }
