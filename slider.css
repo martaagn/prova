@@ -32,6 +32,14 @@
     display: flex;
     transition: transform 1s ease;
     gap: 10px;
+
+    cursor: grab;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.card-wrapper:active{
+    cursor: grabbing;
 }
 
 .card{
