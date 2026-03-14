@@ -159,3 +159,19 @@
 .freccia:hover{
     background-color: var(--bg-theme-btn-hover);
 }
+
+/* MAPPA = = = = = = = = = = = = = = = = = = = = = = = = */
+
+#map {
+    height: 500px; 
+    width: 100%;
+    border-radius: 50px;
+
+    z-index: -1;
+}
+
+.birdIcon{
+    object-fit: contain;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = */
