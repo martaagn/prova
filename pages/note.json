@@ -1,8 +1,38 @@
 {
-    "Gabbiano reale mediterraneo": " non so dire se ci fossero più gabbiani o più persone per metroquadro di spiaggia",
-    "Airone guardabuoi occidentale": " compagni di passeggiate con mamma, simpatici abitanti dei campi da golf incolti vicino al parco",
-    "Germano reale" : " durante il nostro magico scalo a Madrid!",
-    "Rondone" : "ha delle piume bellissime !!",
-    "Balestruccio": "c'è chi la mattina prende il caffè e chi si lancia in picchiata dai sotto tetti delle case di montagna",
-    "Upupa": " picnic con le altre + jiamo + upupa, cos'altro si potrebbe mai desiderare?"
+    "Gabbiano reale mediterraneo": {
+        "note": "non so dire se ci fossero più gabbiani o più persone per metroquadro di spiaggia",
+        "habitat": "Coste e Città",
+        "alimentazione": "Onnivoro",
+        "ordine": "Charadriiformi"
+    },
+    "Airone guardabuoi occidentale": {
+        "note": "compagni di passeggiate con mamma, simpatici abitanti dei campi da golf incolti vicino al parco",
+        "habitat": "Zone Umide",
+        "alimentazione": "Carnivoro",
+        "ordine": "Pelecaniformi"
+    },
+    "Germano reale": {
+        "note": "durante il nostro magico scalo a Madrid!",
+        "habitat": "Zone Umide",
+        "alimentazione": "Onnivoro",
+        "ordine": "Anseriformi"
+    },
+    "Rondone": {
+        "note": "ha delle piume bellissime !!",
+        "habitat": "Città e Rupi",
+        "alimentazione": "Insettivoro",
+        "ordine": "Apodiformi"
+    },
+    "Balestruccio": {
+        "note": "c'è chi la mattina prende il caffè e chi si lancia in picchiata dai sotto tetti delle case di montagna",
+        "habitat": "Montagna e Città",
+        "alimentazione": "Insettivoro",
+        "ordine": "Passeriformi"
+    },
+    "Upupa": {
+        "note": "picnic con le altre + jiamo + upupa, cos'altro si potrebbe mai desiderare?",
+        "habitat": "Campagne e Boschi",
+        "alimentazione": "Insettivoro",
+        "ordine": "Bucerotiformi"
+    }
 }
